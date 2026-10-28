@@ -1,344 +1,2716 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Umar Hayat — Data Entry · Data Mining · Data Cleaning</title>
-<meta name="description" content="Detail-oriented data specialist with 3+ years of experience in accurate data entry, data mining, data cleaning and e-commerce product management. Oracle, WordPress & WooCommerce.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0F0715">
+  <meta name="description"
+    content="Umar Hayat is a data entry, data mining and data cleaning specialist in Pakistan. Accurate records in Oracle, data verification, and e-commerce catalogue and order management.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Umar Hayat | Data Entry, Data Mining &amp; Data Cleaning Specialist">
+  <meta property="og:description"
+    content="Clean, accurate data — entered, mined and verified. Oracle records, data cleaning and e-commerce catalogue management.">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F0715'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='800' text-anchor='middle' fill='%238750F7'%3EUH%3C/text%3E%3C/svg%3E">
+  <title>Umar Hayat | Data Entry, Data Mining &amp; Data Cleaning Specialist</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    @property --ang {
+      syntax: "<angle>";
+      inherits: false;
+      initial-value: 0deg
+    }
+
+    :root {
+      color-scheme: dark;
+      --bg: #0F0715;
+      --bg2: #160C22;
+      --surface: #1C112B;
+      --surface2: #251741;
+      --line: rgba(255, 255, 255, .09);
+      --ink: #F6F2FF;
+      --text: #D2C7E8;
+      --muted: #A293C4;
+      --vio: #8750F7;
+      --vio2: #A855F7;
+      --pink: #D946EF;
+      --soft: #C4B5FD;
+      --on-vio: #FFFFFF;
+      --wa: #25D366;
+      --grad: linear-gradient(135deg, var(--vio), var(--vio2) 55%, var(--pink));
+      --glow: 0 0 0 1px rgba(135, 80, 247, .38), 0 24px 64px -18px rgba(135, 80, 247, .5);
+      --r-sm: 12px;
+      --r-md: 16px;
+      --r-lg: 24px;
+      --ease: cubic-bezier(.22, .61, .36, 1);
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    html {
+      scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 88px);
+      scroll-behavior: smooth;
+      scrollbar-color: #3A2A5C var(--bg)
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit
+    }
+
+    ::selection {
+      background: var(--vio);
+      color: #fff
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      overflow-x: hidden;
+      background: radial-gradient(64rem 44rem at 88% -12%, rgba(135, 80, 247, .16), transparent 62%), radial-gradient(48rem 38rem at -12% 32%, rgba(217, 70, 239, .09), transparent 60%), var(--bg)
+    }
+
+    a {
+      color: inherit
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--ink);
+      font-family: "Space Grotesk", "Plus Jakarta Sans", system-ui, sans-serif;
+      font-weight: 700;
+      margin: 0;
+      line-height: 1.08;
+      letter-spacing: -.03em
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--vio);
+      outline-offset: 3px;
+      border-radius: 10px
+    }
+
+    .wrap {
+      max-width: 74rem;
+      margin: 0 auto;
+      padding: 0 1.5rem
+    }
+
+    .skip {
+      position: fixed;
+      left: 1rem;
+      top: -4.5rem;
+      z-index: 300;
+      background: var(--grad);
+      color: #fff;
+      font-weight: 700;
+      padding: .7rem 1.3rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: top .35s var(--ease)
+    }
+
+    .skip:focus-visible {
+      top: 1rem
+    }
+
+    /* progress + cursor glow */
+    .progress {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 3px;
+      z-index: 120;
+      background: var(--grad);
+      transform: scaleX(var(--p, 0));
+      transform-origin: left;
+      pointer-events: none
+    }
+
+    .cursor {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 34rem;
+      height: 34rem;
+      margin: -17rem 0 0 -17rem;
+      z-index: 5;
+      pointer-events: none;
+      background: radial-gradient(closest-side, rgba(135, 80, 247, .10), transparent);
+      opacity: 0;
+      transition: opacity .4s
+    }
+
+    .cursor.on {
+      opacity: 1
+    }
+
+    /* header */
+    .hdr {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 60;
+      background: rgba(15, 7, 21, .55);
+      -webkit-backdrop-filter: blur(18px) saturate(1.5);
+      backdrop-filter: blur(18px) saturate(1.5);
+      border-bottom: 1px solid transparent;
+      transition: background .3s, border-color .3s
+    }
+
+    .hdr.scrolled {
+      background: rgba(15, 7, 21, .85);
+      border-color: var(--line)
+    }
+
+    .hdr .wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      height: 80px;
+      transition: height .3s var(--ease)
+    }
+
+    .hdr.scrolled .wrap {
+      height: 64px
+    }
+
+    .logo {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      letter-spacing: -.03em;
+      text-decoration: none;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: var(--vio)
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: .25rem
+    }
+
+    .menu a.l {
+      position: relative;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .98rem;
+      color: var(--text);
+      padding: .45rem .95rem;
+      border-radius: 999px;
+      transition: color .2s, background .2s, box-shadow .2s
+    }
+
+    .menu a.l:hover {
+      color: var(--ink);
+      background: rgba(255, 255, 255, .07)
+    }
+
+    .menu a.l.active {
+      color: var(--ink);
+      background: rgba(135, 80, 247, .16);
+      box-shadow: inset 0 0 0 1px rgba(135, 80, 247, .5)
+    }
+
+    .acts {
+      display: flex;
+      align-items: center;
+      gap: .7rem
+    }
+
+    .wa-btn {
+      display: grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: var(--grad);
+      color: #fff;
+      box-shadow: 0 8px 24px -8px rgba(135, 80, 247, .8);
+      transition: box-shadow .3s, transform .3s var(--ease)
+    }
+
+    .wa-btn:hover {
+      box-shadow: 0 0 0 6px rgba(135, 80, 247, .18), 0 10px 26px -6px rgba(135, 80, 247, .9);
+      transform: translateY(-2px)
+    }
+
+    .wa-btn svg {
+      width: 1.6rem;
+      height: 1.6rem
+    }
+
+    .burger {
+      display: none;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 1.5px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color .25s, background .25s
+    }
+
+    .burger:hover {
+      border-color: var(--vio);
+      background: rgba(135, 80, 247, .12)
+    }
+
+    .burger .bars {
+      position: relative;
+      width: 1.25rem;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+      transition: background .25s
+    }
+
+    .burger .bars::before,
+    .burger .bars::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+      transition: transform .3s var(--ease), top .3s var(--ease)
+    }
+
+    .burger .bars::before {
+      top: -6px
+    }
+
+    .burger .bars::after {
+      top: 6px
+    }
+
+    .menu-open .burger .bars {
+      background: transparent
+    }
+
+    .menu-open .burger .bars::before {
+      top: 0;
+      transform: rotate(45deg)
+    }
+
+    .menu-open .burger .bars::after {
+      top: 0;
+      transform: rotate(-45deg)
+    }
+
+    /* buttons */
+    .btn {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      padding: .95rem 1.9rem;
+      border-radius: 999px;
+      font: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid var(--vio);
+      background: transparent;
+      color: var(--ink);
+      transition: transform .2s var(--ease), box-shadow .3s, border-color .2s, color .2s
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, .35) 50%, transparent 70%);
+      transform: translateX(-130%);
+      transition: transform .7s var(--ease)
+    }
+
+    .btn:hover::after {
+      transform: translateX(130%)
+    }
+
+    .btn:hover {
+      transform: translateY(-2px)
+    }
+
+    .btn:active {
+      transform: translateY(1px) scale(.97)
+    }
+
+    .btn[hidden] {
+      display: none
+    }
+
+    .btn.fill {
+      background: var(--grad);
+      border-color: transparent;
+      color: var(--on-vio);
+      box-shadow: 0 10px 32px -10px rgba(135, 80, 247, .75)
+    }
+
+    .btn.fill:hover {
+      box-shadow: 0 16px 44px -8px rgba(168, 85, 247, .95)
+    }
+
+    .btn.out {
+      border-color: var(--line);
+      color: var(--ink)
+    }
+
+    .btn.out:hover {
+      border-color: var(--vio);
+      color: var(--soft)
+    }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .8rem
+    }
+
+    /* hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 6.5rem 0 5.5rem
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      -webkit-mask-image: radial-gradient(ellipse 72% 68% at 60% 32%, #000 18%, transparent 78%);
+      mask-image: radial-gradient(ellipse 72% 68% at 60% 32%, #000 18%, transparent 78%);
+      pointer-events: none
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      translate: 0 calc(var(--py, 0) * 1px)
+    }
+
+    .b1 {
+      width: 36rem;
+      height: 36rem;
+      background: rgba(135, 80, 247, .34);
+      right: -8rem;
+      top: -10rem;
+      animation: d1 18s ease-in-out infinite alternate
+    }
+
+    .b2 {
+      width: 30rem;
+      height: 30rem;
+      background: rgba(217, 70, 239, .22);
+      left: -10rem;
+      top: 12rem;
+      animation: d2 22s ease-in-out infinite alternate
+    }
+
+    .b3 {
+      width: 26rem;
+      height: 26rem;
+      background: rgba(168, 85, 247, .26);
+      right: 20%;
+      bottom: -12rem;
+      animation: d3 20s ease-in-out infinite alternate
+    }
+
+    @keyframes d1 {
+      to {
+        transform: translate(-9rem, 6rem) scale(1.18)
+      }
+    }
+
+    @keyframes d2 {
+      to {
+        transform: translate(9rem, -5rem) scale(1.1)
+      }
+    }
+
+    @keyframes d3 {
+      to {
+        transform: translate(-7rem, -4rem) scale(1.25)
+      }
+    }
+
+    .herogrid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 4rem;
+      align-items: center
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--soft);
+      background: rgba(135, 80, 247, .12);
+      border: 1px solid rgba(135, 80, 247, .4);
+      padding: .45rem 1.15rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem
+    }
+
+    .tag::before {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      border-radius: 50%;
+      background: var(--vio);
+      box-shadow: 0 0 12px var(--vio);
+      animation: pulse 2.4s ease-in-out infinite
+    }
+
+    @keyframes pulse {
+      50% {
+        opacity: .45
+      }
+    }
+
+    .js .tag,
+    .js .hero p.lead,
+    .js .hero .btns,
+    .js .cue {
+      opacity: 0;
+      translate: 0 18px;
+      transition: opacity .8s var(--ease), translate .8s var(--ease)
+    }
+
+    .js .hero.go .tag {
+      opacity: 1;
+      translate: 0 0
+    }
+
+    .js .hero.go p.lead {
+      opacity: 1;
+      translate: 0 0;
+      transition-delay: .7s
+    }
+
+    .js .hero.go .btns {
+      opacity: 1;
+      translate: 0 0;
+      transition-delay: .9s
+    }
+
+    .js .hero.go .cue {
+      opacity: 1;
+      translate: 0 0;
+      transition-delay: 1.15s
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5.8vw, 4.6rem);
+      max-width: 15ch
+    }
+
+    .w {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+      padding-bottom: .12em;
+      margin-bottom: -.12em
+    }
+
+    .w>span {
+      display: inline-block;
+      transform: translateY(110%);
+      transition: transform .9s var(--ease);
+      transition-delay: calc(var(--i) * 110ms + 150ms)
+    }
+
+    .hero h1.ready .w>span {
+      transform: none
+    }
+
+    .w.g>span {
+      background: linear-gradient(100deg, var(--soft), var(--vio2), var(--pink), var(--soft));
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: var(--vio2);
+      animation: shimmer 6s linear infinite
+    }
+
+    @keyframes shimmer {
+      to {
+        background-position: 250% 0
+      }
+    }
+
+    .hero p.lead {
+      font-size: 1.18rem;
+      max-width: 52ch;
+      margin: 1.6rem 0 2.2rem
+    }
+
+    .cue {
+      position: absolute;
+      left: 50%;
+      bottom: 1.2rem;
+      margin-left: -1.45rem;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      width: 2.9rem;
+      height: 2.9rem;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      color: var(--soft);
+      background: rgba(28, 17, 43, .6);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      animation: cuebob 2.2s ease-in-out infinite;
+      transition: border-color .3s, color .3s
+    }
+
+    .cue:hover {
+      border-color: var(--vio);
+      color: var(--ink)
+    }
+
+    .cue svg {
+      width: 1.2rem;
+      height: 1.2rem
+    }
+
+    @keyframes cuebob {
+      50% {
+        transform: translateY(8px)
+      }
+    }
+
+    .me-wrap {
+      position: relative;
+      justify-self: end;
+      width: 100%;
+      max-width: 21rem;
+      padding: 5px;
+      border-radius: calc(var(--r-lg) + 5px);
+      background: conic-gradient(from var(--ang), var(--vio), var(--pink), var(--soft), var(--vio));
+      animation: spin 8s linear infinite, float 7s ease-in-out infinite;
+      box-shadow: 0 0 80px -12px rgba(135, 80, 247, .55)
+    }
+
+    @keyframes spin {
+      to {
+        --ang: 360deg
+      }
+    }
+
+    @keyframes float {
+      50% {
+        translate: 0 -12px
+      }
+    }
+
+    .me {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: var(--r-lg)
+    }
+
+    .fchip {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem 1rem;
+      border-radius: 999px;
+      background: rgba(28, 17, 43, .85);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-weight: 700;
+      font-size: .9rem;
+      box-shadow: 0 14px 34px -14px rgba(0, 0, 0, .7);
+      animation: bob 5s ease-in-out infinite
+    }
+
+    .fchip::before {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      border-radius: 50%;
+      background: var(--vio);
+      box-shadow: 0 0 10px var(--vio)
+    }
+
+    .fchip.c1 {
+      left: -2.2rem;
+      top: 18%
+    }
+
+    .fchip.c2 {
+      right: -1.6rem;
+      top: 46%;
+      animation-delay: -1.6s
+    }
+
+    .fchip.c2::before {
+      background: var(--pink);
+      box-shadow: 0 0 10px var(--pink)
+    }
+
+    .fchip.c3 {
+      left: 1.2rem;
+      bottom: -1rem;
+      animation-delay: -3.2s
+    }
+
+    .fchip.c3::before {
+      background: var(--soft);
+      box-shadow: 0 0 10px var(--soft)
+    }
+
+    @keyframes bob {
+      50% {
+        transform: translateY(-9px)
+      }
+    }
+
+    .facts {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 4.5rem;
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      background: rgba(28, 17, 43, .55);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      overflow: hidden
+    }
+
+    .facts div {
+      padding: 1.5rem 1.7rem;
+      border-left: 1px solid var(--line);
+      transition: background .3s
+    }
+
+    .facts div:hover {
+      background: rgba(135, 80, 247, .08)
+    }
+
+    .facts div:first-child {
+      border-left: 0
+    }
+
+    .facts b {
+      display: block;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.7rem;
+      line-height: 1.2;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: var(--vio2)
+    }
+
+    .facts span {
+      font-size: .93rem;
+      color: var(--muted)
+    }
+
+    /* marquee */
+    .marq {
+      overflow: hidden;
+      border-block: 1px solid var(--line);
+      background: rgba(22, 12, 34, .7);
+      padding: 1.15rem 0;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)
+    }
+
+    .track {
+      display: flex;
+      gap: 3rem;
+      width: max-content;
+      animation: slide 38s linear infinite
+    }
+
+    .marq:hover .track {
+      animation-play-state: paused
+    }
+
+    .track span {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      white-space: nowrap;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--muted)
+    }
+
+    .track span::after {
+      content: "";
+      width: .5rem;
+      height: .5rem;
+      border-radius: 50%;
+      background: var(--grad)
+    }
+
+    @keyframes slide {
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* sections */
+    section {
+      padding: 7rem 0;
+      content-visibility: auto;
+      contain-intrinsic-size: auto 900px
+    }
+
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--soft);
+      font-weight: 700;
+      margin: 0 0 .7rem;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .85rem
+    }
+
+    .kicker::before {
+      content: "";
+      width: 2.2rem;
+      height: 2px;
+      background: var(--grad);
+      border-radius: 2px
+    }
+
+    section h2 {
+      font-size: clamp(2rem, 4.4vw, 3.1rem);
+      margin-bottom: 1rem
+    }
+
+    .sub {
+      color: var(--muted);
+      max-width: 56ch;
+      margin: 0 0 3.2rem
+    }
+
+    .alt {
+      background: var(--bg2);
+      border-block: 1px solid var(--line)
+    }
+
+    .js .reveal {
+      opacity: 0;
+      translate: 0 30px;
+      filter: blur(8px)
+    }
+
+    .reveal {
+      transition: opacity .8s var(--ease) var(--d, 0ms), translate .8s var(--ease) var(--d, 0ms), filter .8s var(--ease) var(--d, 0ms), transform .35s var(--ease), border-color .3s, box-shadow .3s
+    }
+
+    .js .reveal.shown {
+      opacity: 1;
+      translate: 0 0;
+      filter: blur(0)
+    }
+
+    /* spotlight cards */
+    .spot {
+      position: relative
+    }
+
+    .spot::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .35s;
+      background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 50%), rgba(135, 80, 247, .16), transparent 45%)
+    }
+
+    .spot:hover::after {
+      opacity: 1
+    }
+
+    /* work */
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.7rem
+    }
+
+    .proj {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: linear-gradient(180deg, var(--surface), var(--bg2));
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      transform: perspective(950px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px))
+    }
+
+    .proj::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 3px;
+      background: var(--grad);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .5s var(--ease);
+      z-index: 3
+    }
+
+    .proj:hover,
+    .proj:focus-within {
+      --lift: -10px;
+      border-color: rgba(135, 80, 247, .65);
+      box-shadow: var(--glow)
+    }
+
+    .proj:hover::before,
+    .proj:focus-within::before {
+      transform: scaleX(1)
+    }
+
+    .shot {
+      display: block;
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: var(--bg2)
+    }
+
+    .shot img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 0%;
+      transition: object-position 1.1s var(--ease)
+    }
+
+    .proj:hover .shot img {
+      object-position: 50% 100%;
+      transition: object-position 7s linear
+    }
+
+    .shot::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, transparent 55%, rgba(15, 7, 21, .55));
+      pointer-events: none
+    }
+
+    .shot::after {
+      content: "Hover to scroll the page";
+      position: absolute;
+      right: .7rem;
+      bottom: .7rem;
+      z-index: 2;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--ink);
+      background: rgba(15, 7, 21, .8);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: .2rem .7rem;
+      opacity: 0;
+      transition: opacity .3s
+    }
+
+    .proj:hover .shot::after {
+      opacity: 1
+    }
+
+    .pbody {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 1.7rem 1.8rem 1.9rem
+    }
+
+    .pill {
+      align-self: flex-start;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--soft);
+      background: rgba(135, 80, 247, .12);
+      border: 1px solid rgba(135, 80, 247, .45);
+      border-radius: 999px;
+      padding: .3rem 1rem;
+      margin-bottom: 1.1rem
+    }
+
+    .proj h3 {
+      font-size: 1.5rem;
+      margin-bottom: .6rem
+    }
+
+    .proj p {
+      margin: 0 0 1.3rem;
+      font-size: 1rem;
+      color: var(--muted)
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem 1.4rem;
+      margin-top: auto;
+      position: relative;
+      z-index: 1
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--soft);
+      font-weight: 700;
+      font-size: .95rem;
+      text-decoration: none
+    }
+
+    .links a::after {
+      content: "\2192";
+      transition: transform .3s var(--ease)
+    }
+
+    .links a:hover::after {
+      transform: translateX(6px)
+    }
+
+    /* services */
+    .grid4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem
+    }
+
+    .svc {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.4rem;
+      padding: 2rem;
+      background: linear-gradient(160deg, var(--surface), rgba(22, 12, 34, .6));
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg)
+    }
+
+    .svc:hover {
+      transform: translateY(-6px);
+      border-color: rgba(135, 80, 247, .55);
+      box-shadow: var(--glow)
+    }
+
+    .ic {
+      display: grid;
+      place-items: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: var(--r-md);
+      background: var(--grad);
+      color: #fff;
+      box-shadow: 0 10px 24px -10px rgba(135, 80, 247, .8);
+      transition: transform .5s var(--ease)
+    }
+
+    .svc:hover .ic {
+      transform: rotate(-8deg) scale(1.12)
+    }
+
+    .ic svg {
+      width: 1.7rem;
+      height: 1.7rem
+    }
+
+    .svc h3 {
+      font-size: 1.3rem;
+      margin-bottom: .5rem
+    }
+
+    .svc p {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--muted)
+    }
+/* skills */
+[data-c="0"]{--c1:#8750F7;--c2:#A855F7}[data-c="1"]{--c1:#D946EF;--c2:#F472B6}[data-c="2"]{--c1:#14B8A6;--c2:#34D399}[data-c="3"]{--c1:#F59E0B;--c2:#FBBF24}[data-c="4"]{--c1:#3B82F6;--c2:#60A5FA}
+.skl-bar{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.skl{display:inline-flex;align-items:center;gap:.55rem;font:inherit;font-weight:600;font-size:.92rem;color:var(--text);background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;padding:.5rem .9rem .5rem .8rem;cursor:pointer;transition:transform .3s var(--ease),border-color .3s,background .3s,box-shadow .3s}
+.skl b{width:.6rem;height:.6rem;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2));box-shadow:0 0 10px var(--c1)}
+.skl:hover{transform:translateY(-2px);color:var(--ink);border-color:var(--c1)}
+.skl[aria-pressed="true"]{color:#fff;border-color:var(--c1);background:linear-gradient(135deg,color-mix(in srgb,var(--c1) 40%,transparent),color-mix(in srgb,var(--c2) 18%,transparent));box-shadow:0 12px 26px -14px var(--c1)}
+.skm{position:relative;width:100vw;margin:1rem 0 0 calc(50% - 50vw);padding:1.6rem 0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.skm::before{content:"";position:absolute;left:50%;top:50%;width:60rem;max-width:90vw;height:14rem;translate:-50% -50%;border-radius:50%;background:radial-gradient(closest-side,rgba(135,80,247,.22),transparent);filter:blur(24px);pointer-events:none}
+.skm-band{position:relative;display:grid;gap:1rem}
+.skm-row{display:flex;width:max-content;gap:1rem;animation:skm 70s linear infinite}
+.skm-row.rev{animation-direction:reverse;animation-duration:80s}
+.skm-row.c{animation-duration:75s}
+.skm-row span{position:relative;display:inline-flex;align-items:center;gap:.75rem;white-space:nowrap;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:1.05rem;color:var(--ink);padding:.5rem 1.3rem .5rem .5rem;border-radius:999px;background:linear-gradient(160deg,color-mix(in srgb,var(--c1) 14%,transparent),rgba(255,255,255,.02));border:1px solid color-mix(in srgb,var(--c1) 28%,transparent);transition:transform .3s var(--ease),border-color .3s,box-shadow .3s,opacity .4s,filter .4s}
+.skm-row i{display:grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;box-shadow:0 6px 16px -6px var(--c1)}
+.skm-row i svg{width:1.05rem;height:1.05rem}
+.skm-row span:hover{transform:translateY(-3px);border-color:var(--c2);box-shadow:0 14px 30px -14px var(--c1)}
+.skm-row span.dim{opacity:.18;filter:saturate(0)}
+@keyframes skm{to{transform:translateX(calc(-50% - .5rem))}}
+@media (max-width:640px){
+  .skl-bar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .skl-bar::-webkit-scrollbar{display:none}.skl{flex:none}
+  .skm-row,.skm-band{gap:.7rem}
+  .skm-row span{font-size:.95rem;gap:.55rem}.skm-row i{width:2rem;height:2rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .skm{-webkit-mask-image:none;mask-image:none}
+  .skm-row{animation:none;flex-wrap:wrap;width:auto;padding:0 1.5rem}
+}
+    /* experience */
+    .tl {
+      position: relative;
+      padding-left: 2.4rem;
+      max-width: 56rem
+    }
+
+    .tl::before,
+    .tl::after {
+      content: "";
+      position: absolute;
+      left: .45rem;
+      top: .5rem;
+      width: 2px
+    }
+
+    .tl::before {
+      bottom: .5rem;
+      background: var(--line)
+    }
+
+    .tl::after {
+      height: calc((100% - 1rem) * var(--tp, 1));
+      background: var(--grad);
+      border-radius: 2px;
+      box-shadow: 0 0 14px rgba(135, 80, 247, .5)
+    }
+
+    .ev {
+      position: relative;
+      padding-bottom: 2.6rem
+    }
+
+    .ev:last-child {
+      padding-bottom: 0
+    }
+
+    .ev::before {
+      content: "";
+      position: absolute;
+      left: -2.4rem;
+      top: .35rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background: var(--grad);
+      box-shadow: 0 0 0 5px var(--bg), 0 0 18px rgba(135, 80, 247, .6)
+    }
+
+    .when {
+      color: var(--soft);
+      font-weight: 700;
+      font-size: .95rem
+    }
+
+    .ev h3 {
+      font-size: 1.5rem;
+      margin: .3rem 0 .3rem
+    }
+
+    .org {
+      color: var(--muted);
+      margin: 0 0 1rem
+    }
+
+    .org a {
+      color: var(--soft);
+      font-weight: 600
+    }
+
+    .ev ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--text)
+    }
+
+    .ev li {
+      margin: .55rem 0
+    }
+
+    /* about */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 3rem;
+      align-items: start
+    }
+
+    .about-txt p {
+      font-size: 1.1rem;
+      margin: 0 0 1.25rem
+    }
+
+    .about-txt p:last-child {
+      margin-bottom: 0
+    }
+
+    .about-txt strong {
+      color: var(--ink)
+    }
+
+    .about-txt a {
+      color: var(--soft);
+      font-weight: 700
+    }
+
+    .about-card .btn {
+      width: 100%
+    }
+
+    /* contact */
+    .contact {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 2.4rem;
+      align-items: start
+    }
+
+    .panel {
+      padding: clamp(1.5rem, 3.5vw, 2.4rem);
+      background: linear-gradient(165deg, var(--surface), rgba(22, 12, 34, .55));
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      transition: border-color .3s, box-shadow .3s
+    }
+
+    .panel:focus-within {
+      border-color: rgba(135, 80, 247, .55);
+      box-shadow: var(--glow)
+    }
+
+    .panel h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1.3rem
+    }
+
+    label.f {
+      display: block;
+      font-weight: 600;
+      font-size: .92rem;
+      color: var(--ink);
+      margin: 0 0 .4rem
+    }
+
+    .in {
+      width: 100%;
+      font: inherit;
+      color: var(--ink);
+      background: rgba(15, 7, 21, .7);
+      border: 1.5px solid var(--line);
+      border-radius: var(--r-sm);
+      padding: .85rem 1.05rem;
+      margin-bottom: 1.1rem;
+      transition: border-color .2s, box-shadow .2s, transform .2s
+    }
+
+    .in:focus {
+      outline: none;
+      border-color: var(--vio);
+      box-shadow: 0 0 0 4px rgba(135, 80, 247, .22);
+      transform: translateY(-2px)
+    }
+
+    .in::placeholder {
+      color: #7A6C99
+    }
+
+    select.in option {
+      color: #1A1030
+    }
+
+    textarea.in {
+      min-height: 7.5rem;
+      resize: vertical
+    }
+
+    .hint {
+      font-size: .9rem;
+      color: var(--muted);
+      margin: .9rem 0 0
+    }
+
+    .ways {
+      list-style: none;
+      margin: 0 0 1.6rem;
+      padding: 0
+    }
+
+    .ways li {
+      padding: .95rem 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .ways li:last-child {
+      border-bottom: 0
+    }
+
+    .ways small {
+      display: block;
+      color: var(--muted);
+      font-size: .88rem
+    }
+
+    .ways b {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--ink);
+      font-weight: 700
+    }
+
+    .ways a {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      word-break: break-all;
+      transition: color .2s
+    }
+
+    .ways a::after {
+      content: "\2192";
+      color: var(--soft);
+      transition: transform .3s var(--ease)
+    }
+
+    .ways a:hover {
+      color: var(--soft)
+    }
+
+    .ways a:hover::after {
+      transform: translateX(6px)
+    }
+
+    footer {
+      padding: 2rem 0 2.6rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .92rem
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: .8rem
+    }
+
+    footer a {
+      color: var(--soft);
+      font-weight: 600;
+      text-decoration: none
+    }
+
+    footer a:hover {
+      text-decoration: underline
+    }
+
+    /* project brief drawer */
+    html.dr-open body {
+      overflow: hidden
+    }
+
+    .scrim {
+      position: fixed;
+      inset: 0;
+      z-index: 130;
+      background: rgba(8, 3, 14, .66);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .4s var(--ease), visibility .4s
+    }
+
+    .dr-open .scrim {
+      opacity: 1;
+      visibility: visible
+    }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 140;
+      width: min(30rem, 100vw);
+      display: flex;
+      flex-direction: column;
+      background: var(--bg2);
+      border-left: 1px solid var(--line);
+      box-shadow: -30px 0 80px -20px rgba(0, 0, 0, .75);
+      transform: translateX(102%);
+      visibility: hidden;
+      transition: transform .5s var(--ease), visibility .5s;
+      padding-top: env(safe-area-inset-top, 0px)
+    }
+
+    .dr-open .drawer {
+      transform: none;
+      visibility: visible
+    }
+
+    .dr-head {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.2rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+      background: var(--bg2)
+    }
+
+    .dr-head h2 {
+      font-size: 1.9rem;
+      margin: 0
+    }
+
+    .dr-x {
+      display: grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 2px solid var(--vio);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      transition: transform .35s var(--ease), background .2s
+    }
+
+    .dr-x:hover {
+      transform: rotate(90deg);
+      background: rgba(135, 80, 247, .16)
+    }
+
+    .dr-x svg {
+      width: 1.3rem;
+      height: 1.3rem
+    }
+
+    .dr-prog {
+      padding: 1rem 1.5rem 1.2rem;
+      background: rgba(135, 80, 247, .08);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .dr-prog p {
+      margin: 0;
+      font-weight: 700;
+      color: var(--ink);
+      font-size: .98rem
+    }
+
+    .meter {
+      height: .85rem;
+      margin-top: .7rem;
+      border-radius: 99px;
+      background: rgba(0, 0, 0, .35);
+      box-shadow: inset 0 0 0 1px var(--line);
+      overflow: hidden
+    }
+
+    .meter i {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--grad);
+      border-radius: 99px;
+      transition: width .5s var(--ease);
+      box-shadow: 0 0 12px rgba(135, 80, 247, .65)
+    }
+
+    .dr-body {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding: 1.3rem 1.5rem
+    }
+
+    .dr-body::-webkit-scrollbar {
+      width: 8px
+    }
+
+    .dr-body::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    .dr-body::-webkit-scrollbar-thumb {
+      background: rgba(135, 80, 247, .35);
+      border-radius: 99px
+    }
+
+    .dr-body::-webkit-scrollbar-thumb:hover {
+      background: rgba(135, 80, 247, .6)
+    }
+
+    .dr-h {
+      margin: 1.5rem 0 .7rem;
+      font-weight: 800;
+      color: var(--ink);
+      font-size: 1.05rem
+    }
+
+    .dr-h:first-child {
+      margin-top: 0
+    }
+
+    .opts {
+      display: grid;
+      gap: .6rem
+    }
+
+    .opt {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: .85rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      background: var(--surface);
+      cursor: pointer;
+      transition: border-color .2s, background .2s, transform .2s
+    }
+
+    .opt:hover {
+      border-color: rgba(135, 80, 247, .55);
+      transform: translateX(2px)
+    }
+
+    .opt input {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      cursor: pointer
+    }
+
+    .opt .ico {
+      flex: none;
+      display: grid;
+      place-items: center;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: 12px;
+      background: var(--bg);
+      color: var(--soft)
+    }
+
+    .opt .ico svg {
+      width: 1.4rem;
+      height: 1.4rem
+    }
+
+    .opt b {
+      display: block;
+      color: var(--ink);
+      line-height: 1.3
+    }
+
+    .opt small {
+      color: var(--muted);
+      font-size: .85rem;
+      line-height: 1.4;
+      display: block
+    }
+
+    .opt .chk {
+      flex: none;
+      margin-left: auto;
+      display: grid;
+      place-items: center;
+      width: 1.7rem;
+      height: 1.7rem;
+      border-radius: 50%;
+      border: 2px solid var(--line);
+      color: transparent;
+      transition: background .2s, border-color .2s, color .2s
+    }
+
+    .opt .chk svg {
+      width: .9rem;
+      height: .9rem
+    }
+
+    .opt input:checked~.chk {
+      background: var(--vio);
+      border-color: var(--vio);
+      color: #fff
+    }
+
+    .opt input:focus-visible~.chk {
+      outline: 3px solid var(--vio);
+      outline-offset: 3px
+    }
+
+    .opt:has(input:checked) {
+      border-color: var(--vio);
+      background: rgba(135, 80, 247, .1)
+    }
+
+    .opt.addon {
+      border-style: dashed;
+      border-width: 2px;
+      border-radius: var(--r-lg);
+      background: rgba(135, 80, 247, .05)
+    }
+
+    .opt.addon .tg {
+      flex: none;
+      margin-left: auto;
+      font-weight: 700;
+      font-size: .9rem;
+      color: var(--soft);
+      background: rgba(135, 80, 247, .14);
+      border-radius: 999px;
+      padding: .25rem .9rem
+    }
+
+    .opt.addon .tg::before {
+      content: "Add"
+    }
+
+    .opt.addon input:checked~.tg {
+      background: var(--grad);
+      color: #fff
+    }
+
+    .opt.addon input:checked~.tg::before {
+      content: "Added"
+    }
+
+    .opt.addon input:focus-visible~.tg {
+      outline: 3px solid var(--vio);
+      outline-offset: 3px
+    }
+
+    .dr-body .in {
+      margin-bottom: .9rem
+    }
+
+    .dr-body label.f {
+      font-size: .88rem
+    }
+
+    .dr-body textarea.in {
+      min-height: 6.5rem
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .8rem
+    }
+
+    .dr-foot {
+      flex: 0 0 auto;
+      padding: 1.1rem 1.5rem calc(1.2rem + env(safe-area-inset-bottom, 0px));
+      border-top: 1px solid var(--line);
+      background: var(--bg2)
+    }
+
+    .sumrow {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem
+    }
+
+    .sumrow span {
+      color: var(--text)
+    }
+
+    .sumrow strong {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2.3rem;
+      color: var(--ink);
+      line-height: 1;
+      font-weight: 700
+    }
+
+    .dr-hint {
+      margin: .4rem 0 1rem;
+      font-size: .88rem;
+      color: var(--muted)
+    }
+
+    .dr-foot .btn {
+      width: 100%;
+      margin-bottom: .7rem;
+      padding: 1.05rem 1.5rem;
+      font-size: 1.05rem
+    }
+
+    .dr-foot .btn:disabled {
+      opacity: .4;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none
+    }
+
+    .dr-foot .btn:disabled::after {
+      display: none
+    }
+
+    @media (max-width:480px) {
+      .two {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* ===== Drawer fix: give the options area room, make the footer compact ===== */
+    .drawer {
+      height: 100vh;
+      height: 100dvh;
+      max-height: 100dvh
+    }
+
+    .dr-head {
+      padding: .8rem 1.2rem
+    }
+
+    .dr-head h2 {
+      font-size: 1.5rem
+    }
+
+    .dr-x {
+      width: 2.5rem;
+      height: 2.5rem
+    }
+
+    .dr-prog {
+      padding: .7rem 1.2rem .8rem
+    }
+
+    .dr-body {
+      min-height: 40%;
+      -webkit-overflow-scrolling: touch
+    }
+
+    .dr-foot {
+      padding: .8rem 1.2rem calc(.8rem + env(safe-area-inset-bottom, 0px));
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .5rem .6rem
+    }
+
+    .dr-foot .sumrow {
+      grid-column: 1/-1;
+      align-items: center
+    }
+
+    .dr-foot .sumrow strong {
+      font-size: 1.5rem
+    }
+
+    .dr-foot .dr-hint {
+      grid-column: 1/-1;
+      margin: 0;
+      font-size: .78rem;
+      line-height: 1.35
+    }
+
+    .dr-foot .btn {
+      width: 100%;
+      margin: 0;
+      padding: .8rem .6rem;
+      font-size: .92rem
+    }
+
+    .dr-foot .btn:disabled {
+      opacity: .55
+    }
+
+    @media (max-width:480px) {
+      .dr-foot {
+        grid-template-columns: 1fr
+      }
+
+      .dr-foot .dr-hint {
+        display: none
+      }
+    }
+
+    @media (max-height:700px) {
+      .dr-foot .dr-hint {
+        display: none
+      }
+    }
+
+    @media (min-width:1800px) {
+      html {
+        font-size: 112.5%
+      }
+    }
+
+    @media (max-width:1024px) {
+      .herogrid {
+        gap: 2.5rem
+      }
+
+      .grid3 {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .sk {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media (max-width:900px) {
+
+      .herogrid,
+      .contact,
+      .about-grid {
+        grid-template-columns: 1fr
+      }
+
+      .me-wrap {
+        justify-self: start;
+        max-width: 15rem
+      }
+
+      .fchip.c1 {
+        left: -.4rem
+      }
+
+      .fchip.c2 {
+        right: -.6rem
+      }
+
+      .grid4 {
+        grid-template-columns: 1fr
+      }
+
+      .facts {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .facts div:nth-child(3) {
+        border-left: 0
+      }
+
+      .facts div:nth-child(n+3) {
+        border-top: 1px solid var(--line)
+      }
+
+      .menu {
+        position: absolute;
+        top: calc(100% + .6rem);
+        left: 1rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: .2rem;
+        background: rgba(21, 11, 33, .97);
+        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(18px);
+        border: 1px solid var(--line);
+        border-radius: var(--r-md);
+        padding: .6rem;
+        box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .8)
+      }
+
+      .menu a.l {
+        padding: .8rem 1.1rem;
+        border-radius: 12px
+      }
+
+      .menu-open .menu {
+        display: flex
+      }
+
+      .burger {
+        display: grid
+      }
+
+      section {
+        padding: 4.6rem 0
+      }
+
+      .hero {
+        padding: 3.6rem 0 4.8rem
+      }
+
+      .shot::after {
+        display: none
+      }
+    }
+
+    @media (max-width:640px) {
+
+      .grid3,
+      .sk {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media (max-width:480px) {
+      .wrap {
+        padding: 0 1rem
+      }
+
+      .hdr .btn {
+        display: none
+      }
+
+      .svc {
+        grid-template-columns: 1fr
+      }
+
+      .facts {
+        grid-template-columns: 1fr
+      }
+
+      .facts div {
+        border-left: 0;
+        border-top: 1px solid var(--line)
+      }
+
+      .facts div:first-child {
+        border-top: 0
+      }
+
+      .fchip {
+        font-size: .8rem;
+        padding: .4rem .8rem
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important
+      }
+
+      .js .reveal,
+      .js .tag,
+      .js .hero p.lead,
+      .js .hero .btns,
+      .js .cue {
+        opacity: 1;
+        translate: none;
+        filter: none
+      }
+
+      .w>span {
+        transform: none
+      }
+
+      .cursor {
+        display: none
+      }
+
+      .proj:hover,
+      .svc:hover,
+      .btn:hover,
+      .chips span:hover {
+        transform: none
+      }
+
+      .proj:hover {
+        --lift: 0px
+      }
+
+      .btn::after,
+      .shot::after {
+        display: none
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="progress" id="bar" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
 
-<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-<header class="site-header" id="siteHeader">
-  <nav class="nav container" aria-label="Main navigation">
-    <a href="#top" class="brand">
-      <span class="brand-mark">UH</span>
-      <span class="brand-text">Umar Hayat</span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main id="top">
-
-  <!-- ============ HERO ============ -->
-  <section class="hero container">
-    <div class="hero-copy">
-      <p class="hero-badge" data-hero>
-        <span class="pulse-dot" aria-hidden="true"></span>
-        Available for new projects
-      </p>
-      <h1 data-hero>Clean, accurate data — <span class="hl">entered, mined &amp; verified.</span></h1>
-      <p class="hero-role" data-hero>Data Entry · Data Mining · Data Cleaning Specialist</p>
-      <p class="hero-desc" data-hero>
-        I'm Umar Hayat, a detail-oriented data professional with 3+ years of experience
-        maintaining production, inventory and order records in Oracle for a textile
-        manufacturer — and running the catalogue, orders and listings of a live
-        e-commerce store.
-      </p>
-      <div class="hero-actions" data-hero>
-        <a href="mailto:contactwithumarhayat@gmail.com" class="btn btn-primary">
-          Hire Me
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#experience" class="btn btn-ghost">View Experience</a>
-      </div>
-      <ul class="hero-trust" data-hero>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
-          Oracle
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
-          WooCommerce
-        </li>
-        <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-          Error-free record keeping
-        </li>
-      </ul>
-    </div>
-
-    <div class="hero-visual" data-hero-visual>
-      <div class="portrait-panel">
-        <img src="assets/portrait.webp" alt="Portrait of Umar Hayat" width="1000" height="1000">
-      </div>
-      <div class="float-card float-card-a">
-        <span class="float-num" data-count="3" data-suffix="+">0+</span>
-        <span class="float-label">Years of experience</span>
-      </div>
-      <div class="float-card float-card-b">
-        <span class="float-num" data-count="35" data-suffix="+">0+</span>
-        <span class="float-label">Products managed</span>
+  <header class="hdr" id="hdr">
+    <div class="wrap">
+      <a class="logo" href="#top">Umar Hayat</a>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a class="l" href="#about">About</a><a class="l" href="#work">Process</a><a class="l"
+          href="#services">Services</a><a class="l" href="#skills">Skills</a><a class="l"
+          href="#experience">Experience</a><a class="l" href="#contact">Contact</a>
+      </nav>
+      <div class="acts">
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu"
+          aria-label="Toggle menu"><span class="bars"></span></button>
+        <a class="wa-btn mag" href="https://wa.me/923104561634" target="_blank" rel="noopener"
+          aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z" />
+            <path
+              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z" />
+          </svg></a>
+        <a class="btn fill mag" href="#contact" data-open="brief">Start a project</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ============ TICKER ============ -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>Data Entry</span><i></i><span>Data Mining</span><i></i><span>Data Cleaning</span><i></i><span>Web Research</span><i></i><span>Product Listings</span><i></i><span>Order Processing</span><i></i><span>Database Maintenance</span><i></i><span>Daily Reporting</span><i></i>
-      <span>Data Entry</span><i></i><span>Data Mining</span><i></i><span>Data Cleaning</span><i></i><span>Web Research</span><i></i><span>Product Listings</span><i></i><span>Order Processing</span><i></i><span>Database Maintenance</span><i></i><span>Daily Reporting</span><i></i>
-    </div>
-  </div>
-
-  <!-- ============ STATS ============ -->
-  <section class="stats container" aria-label="Key numbers">
-    <div class="stat" data-reveal>
-      <span class="stat-num"><span data-count="3">0</span>+</span>
-      <span class="stat-label">Years of hands-on data experience</span>
-    </div>
-    <div class="stat" data-reveal>
-      <span class="stat-num"><span data-count="35">0</span>+</span>
-      <span class="stat-label">E-commerce products managed</span>
-    </div>
-    <div class="stat" data-reveal>
-      <span class="stat-num"><span data-count="2">0</span></span>
-      <span class="stat-label">Industries — textile manufacturing &amp; e-commerce</span>
-    </div>
-    <div class="stat" data-reveal>
-      <span class="stat-num"><span data-count="4">0</span></span>
-      <span class="stat-label">Languages spoken</span>
-    </div>
-  </section>
-
-  <!-- ============ SERVICES ============ -->
-  <section class="section container" id="services">
-    <div class="section-head" data-reveal>
-      <p class="eyebrow">What I Do</p>
-      <h2>Services built around <span class="hl">data accuracy</span></h2>
-      <p class="section-sub">Every record entered, mined or cleaned is verified before it reaches you.</p>
-    </div>
-    <div class="services-grid" data-reveal-group>
-      <article class="card service-card" data-reveal-item>
-        <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+  <main id="top" tabindex="-1">
+    <div class="hero" id="hero">
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
+      <div class="blob b3" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="herogrid">
+          <div>
+            <span class="tag">Data Entry, Data Mining &amp; Data Cleaning</span>
+            <h1 id="h1">Clean accurate data entered mined and verified</h1>
+            <p class="lead">I enter, mine and clean business data so your records, catalogue and reports are accurate
+              and ready to use. Three years of Oracle records for a textile manufacturer, and a live WooCommerce store
+              run end to end.</p>
+            <div class="btns">
+              <a class="btn fill mag" href="#contact" data-open="brief">Start a project</a>
+              <a class="btn out" href="#work">See my process</a>
+            </div>
+          </div>
+          <div class="me-wrap" id="portrait">
+            <img class="me" src="assets/portrait.webp" alt="Umar Hayat, data entry, data mining and data cleaning specialist"
+              width="1024" height="1024" fetchpriority="high" decoding="async">
+            <span class="fchip c1" aria-hidden="true">Data Entry</span>
+            <span class="fchip c2" aria-hidden="true">Oracle</span>
+            <span class="fchip c3" aria-hidden="true">Data Cleaning</span>
+          </div>
         </div>
-        <h3>Data Entry</h3>
-        <p>Fast, accurate entry of production, inventory and order records into Oracle, spreadsheets and online forms — with an eye for detail that keeps error rates near zero.</p>
-      </article>
-      <article class="card service-card" data-reveal-item>
-        <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-        </div>
-        <h3>Data Mining &amp; Research</h3>
-        <p>Collecting and compiling structured data from the web, catalogues and supplier sources — names, prices, specs, contacts — delivered in the format you need.</p>
-      </article>
-      <article class="card service-card" data-reveal-item>
-        <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
-        </div>
-        <h3>Data Cleaning</h3>
-        <p>Removing duplicates, fixing inconsistencies, standardising formats and verifying values so your database becomes a source you can actually trust.</p>
-      </article>
-      <article class="card service-card" data-reveal-item>
-        <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
-        </div>
-        <h3>E-commerce Management</h3>
-        <p>Product catalogue, titles, tags, categories, sale pricing and order fulfilment — I currently run a live WooCommerce store with 35+ products and Cash on Delivery.</p>
-      </article>
-      <article class="card service-card" data-reveal-item>
-        <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M7 13l3-3 4 4 5-6"/></svg>
-        </div>
-        <h3>Reporting Support</h3>
-        <p>Keeping departmental records current and organised so daily, weekly and monthly reporting is always based on up-to-date, verified numbers.</p>
-      </article>
-      <article class="card service-card card-cta" data-reveal-item>
-        <h3>Need something else with your data?</h3>
-        <p>One-off project or ongoing support — let's talk about what you need.</p>
-        <a href="#contact" class="btn btn-primary btn-sm">
-          Get in touch
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
-    </div>
-  </section>
-
-  <!-- ============ PROCESS ============ -->
-  <section class="section container" id="process">
-    <div class="section-head" data-reveal>
-      <p class="eyebrow">How It Works</p>
-      <h2>From messy to <span class="hl">trustworthy</span> in three steps</h2>
-    </div>
-    <ol class="process-grid" data-reveal-group>
-      <li class="process-step step-1" data-reveal-item>
-        <span class="step-num" aria-hidden="true">01</span>
-        <h3>Share your raw data</h3>
-        <p>Send me your spreadsheets, scans, forms, sources or access. Any format works — I'll tell you exactly what I need to get started.</p>
-      </li>
-      <li class="process-step step-2" data-reveal-item>
-        <span class="step-num" aria-hidden="true">02</span>
-        <h3>I clean, mine &amp; verify</h3>
-        <p>I enter, collect, de-duplicate and standardise your data, cross-checking values against sources so what you get is accurate.</p>
-      </li>
-      <li class="process-step step-3" data-reveal-item>
-        <span class="step-num" aria-hidden="true">03</span>
-        <h3>Receive ready-to-use data</h3>
-        <p>You get clean, structured, verified data in your preferred format — on schedule, confidential, every time.</p>
-      </li>
-    </ol>
-  </section>
-
-  <!-- ============ EXPERIENCE ============ -->
-  <section class="section container" id="experience">
-    <div class="section-head" data-reveal>
-      <p class="eyebrow">Track Record</p>
-      <h2>Experience &amp; education</h2>
-    </div>
-    <div class="timeline" data-reveal-group>
-      <article class="timeline-item" data-reveal-item>
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="card timeline-card">
-          <span class="timeline-date">Jul 2026 — Present</span>
-          <h3>Founder &amp; Online Store Manager</h3>
-          <p class="timeline-org">Comfort House (comforthouse.pk)</p>
-          <ul>
-            <li>Manage and update a catalogue of 35+ products — titles, tags, categories and sale pricing.</li>
-            <li>Process and track customer orders from entry through fulfilment and Cash on Delivery.</li>
-            <li>Handle customer queries, supplier coordination and daily store records.</li>
-            <li>Track site traffic and ad performance with Google Site Kit and Meta Pixel.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="timeline-item" data-reveal-item>
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="card timeline-card">
-          <span class="timeline-date">Sep 2022 — Dec 2025</span>
-          <h3>Data Entry Operator</h3>
-          <p class="timeline-org">Blessed Textiles Limited — Weaving Unit, Admin Staff Dept., Sheikhupura</p>
-          <ul>
-            <li>Entered and maintained production, inventory and order records in Oracle.</li>
-            <li>Kept data accurate and up to date across departments, supporting daily reporting.</li>
-            <li>Handled high volumes of data without errors under company record-keeping standards.</li>
-            <li>Earned an experience certificate describing me as honest, hard-working and of good moral character.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="timeline-item" data-reveal-item>
-        <div class="timeline-dot timeline-dot-edu" aria-hidden="true"></div>
-        <div class="card timeline-card">
-          <span class="timeline-date">2021</span>
-          <h3>BS (Hons) Mathematics</h3>
-          <p class="timeline-org">University of Sargodha</p>
-          <p>A strong numerical and analytical foundation that underpins a careful, process-driven approach to data accuracy.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section class="section container" id="skills">
-    <div class="section-head" data-reveal>
-      <p class="eyebrow">Toolbox</p>
-      <h2>Skills &amp; tools</h2>
-    </div>
-    <div class="skills-grid" data-reveal-group>
-      <div class="card skills-card" data-reveal-item>
-        <h3>Core skills</h3>
-        <ul class="chip-list">
-          <li>Accurate Data Entry</li>
-          <li>Data Verification</li>
-          <li>Record Keeping</li>
-          <li>Database Updating &amp; Maintenance</li>
-          <li>Data Cleaning</li>
-          <li>Web Research</li>
-          <li>Order Processing</li>
-          <li>Product Catalogue Management</li>
-          <li>Reporting Support</li>
-        </ul>
-      </div>
-      <div class="card skills-card" data-reveal-item>
-        <h3>Personal strengths</h3>
-        <ul class="chip-list">
-          <li>Attention to Detail</li>
-          <li>Accuracy</li>
-          <li>Reliability</li>
-          <li>Confidentiality</li>
-          <li>Time Management</li>
-          <li>Process Discipline</li>
-        </ul>
-      </div>
-      <div class="card skills-card" data-reveal-item>
-        <h3>Systems &amp; tools</h3>
-        <ul class="chip-list">
-          <li>Oracle</li>
-          <li>WordPress</li>
-          <li>WooCommerce</li>
-          <li>Google Site Kit</li>
-          <li>Meta Pixel</li>
-        </ul>
-        <h3 class="mt">Languages</h3>
-        <ul class="chip-list">
-          <li>English</li>
-          <li>Urdu</li>
-          <li>Punjabi</li>
-          <li>French (basic)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section container" id="contact">
-    <div class="contact-card" data-reveal>
-      <div class="contact-copy">
-        <p class="eyebrow">Let's Work Together</p>
-        <h2>Have data that needs <span class="hl">cleaning, mining or entering?</span></h2>
-        <p>Send me a message with your project details — I usually reply within 24 hours. References and my experience certificate from Blessed Textiles Limited are available on request.</p>
-        <div class="contact-actions">
-          <a href="mailto:contactwithumarhayat@gmail.com" class="btn btn-primary">
-            Email me
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-          </a>
-          <a href="tel:+923104561634" class="btn btn-ghost">+92 310 4561634</a>
+        <div class="facts">
+          <div class="spot"><b><span data-n="3" data-s="+">3+</span></b><span>Years keeping production, inventory and
+              order data</span></div>
+          <div class="spot"><b><span data-n="35" data-s="+">35+</span></b><span>Products managed in my live
+              store</span></div>
+          <div class="spot"><b><span data-n="4">4</span></b><span>Languages: English, Urdu, Punjabi, French</span></div>
+          <div class="spot"><b>BS (Hons)</b><span>Mathematics, University of Sargodha</span></div>
         </div>
       </div>
-      <ul class="contact-meta">
-        <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          <div><strong>Location</strong><span>Nankana Sahib, Pakistan · open to relocating to Lahore</span></div>
-        </li>
-        <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          <div><strong>Availability</strong><span>Remote projects · ongoing or one-off</span></div>
-        </li>
-        <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5a5.3 5.3 0 0 0-1.4-3.5A5 5 0 0 0 17 2s-1.2-.3-4 1.5a13.4 13.4 0 0 0-4 0C6.2 1.7 5 2 5 2a5 5 0 0 0-.6 4.5A5.3 5.3 0 0 0 3 10c0 3.5 3 5.5 6 5.5A4.8 4.8 0 0 0 8 19v3"/></svg>
-          <div><strong>Portfolio</strong><span><a href="https://umarhayat834.github.io/portfolio" target="_blank" rel="noopener">umarhayat834.github.io/portfolio</a></span></div>
-        </li>
-      </ul>
+      <a class="cue" href="#about" aria-label="Scroll to about section"><svg viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg></a>
     </div>
-  </section>
 
-</main>
+    <div class="marq" aria-hidden="true">
+      <div class="track" id="track"></div>
+    </div>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2026 Umar Hayat — Data Entry · Data Mining · Data Cleaning</p>
-    <a href="#top" class="to-top">
-      Back to top
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-    </a>
-  </div>
-</footer>
+    <section id="about">
+      <div class="wrap">
+        <p class="kicker reveal">About me</p>
+        <h2 class="reveal">A data specialist who also runs a store</h2>
+        <p class="sub reveal" style="--d:60ms">Three years of production records, plus a live shop that depends on clean
+          listings and orders.</p>
+        <div class="about-grid">
+          <div class="about-txt reveal" style="--d:100ms">
+            <p>I&#39;m <strong>Umar Hayat</strong>, a detail-oriented data specialist based in Nankana Sahib, Pakistan,
+              and open to relocating to Lahore. I hold a BS (Hons) in Mathematics and bring a careful, process-driven
+              approach to data accuracy, record keeping and reporting.</p>
+            <p>For over three years I entered and maintained production, inventory and order records in <strong>Oracle</strong>
+              at Blessed Textiles Limited, keeping data accurate across departments and supporting daily reporting. I
+              received an experience certificate describing me as honest and hard-working.</p>
+            <p>Today I also run <a href="https://comforthouse.pk" target="_blank" rel="noopener">Comfort House</a>, a
+              live WooCommerce store with 35+ products — catalogue, listings, orders, Cash on Delivery fulfilment and
+              daily records. That&#39;s why my data work is built around what a business actually needs: verified
+              numbers you can rely on.</p>
+          </div>
+          <div class="panel spot about-card reveal" style="--d:180ms">
+            <h3>Quick facts</h3>
+            <ul class="ways">
+              <li><small>Based in</small><b>Nankana Sahib, Pakistan (open to Lahore)</b></li>
+              <li><small>Experience</small><b>3+ years, Oracle records at Blessed Textiles</b></li>
+              <li><small>Degree</small><b>BS (Hons) Mathematics, University of Sargodha</b></li>
+              <li><small>Languages</small><b>English, Urdu, Punjabi, French</b></li>
+              <li><small>My store</small><a href="https://comforthouse.pk" target="_blank"
+                  rel="noopener">comforthouse.pk</a></li>
+            </ul>
+            <a class="btn out" href="#contact">Let&#39;s work together</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/motion@12/dist/motion.js"></script>
-<script src="script.js"></script>
+    <section id="work" class="alt">
+      <div class="wrap">
+        <p class="kicker reveal">How I work</p>
+        <h2 class="reveal">Process</h2>
+        <p class="sub reveal" style="--d:80ms">From raw data to a result you can rely on, in three steps.</p>
+        <div class="grid3">
+          <div class="svc spot reveal" style="--d:0ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v12M7 8l5-5 5 5" />
+                <path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" />
+              </svg></div>
+            <div>
+              <h3>1. Share your raw data</h3>
+              <p>Spreadsheets, scans, forms, website exports or supplier sources — any format works. I confirm exactly
+                what I need and how the result will be delivered.</p>
+            </div>
+          </div>
+          <div class="svc spot reveal" style="--d:120ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" />
+              </svg></div>
+            <div>
+              <h3>2. I clean, mine &amp; verify</h3>
+              <p>Entry, de-duplication, format standardisation and cross-checking every value against its source, so
+                accuracy is built in rather than assumed.</p>
+            </div>
+          </div>
+          <div class="svc spot reveal" style="--d:240ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg></div>
+            <div>
+              <h3>3. Receive ready-to-use data</h3>
+              <p>Clean, structured, verified data in your preferred format — on schedule, with your information kept
+                confidential throughout.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <p class="kicker reveal">What I do</p>
+        <h2 class="reveal">Services</h2>
+        <p class="sub reveal" style="--d:80ms">Accurate, verified data work for businesses that depend on their records.
+        </p>
+        <div class="grid4">
+          <div class="svc spot reveal" style="--d:0ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="16" rx="2" />
+                <path d="M3 9h18M9 9v11" />
+              </svg></div>
+            <div>
+              <h3>Data entry</h3>
+              <p>Production, inventory, order and customer records entered accurately into Oracle, spreadsheets or
+                online forms — high volumes, near-zero errors.</p>
+            </div>
+          </div>
+          <div class="svc spot reveal" style="--d:100ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m21 21-4.3-4.3" />
+              </svg></div>
+            <div>
+              <h3>Data mining and research</h3>
+              <p>Structured data collected and compiled from the web, catalogues and supplier sources — names, prices,
+                specifications and contacts, in the format you need.</p>
+            </div>
+          </div>
+          <div class="svc spot reveal" style="--d:200ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 21l4-1 11-11a2.1 2.1 0 0 0-3-3L4 17l-1 4z" />
+                <path d="M14 6l3 3" />
+              </svg></div>
+            <div>
+              <h3>Data cleaning</h3>
+              <p>Duplicate removal, format standardisation, value correction and verification, so your database
+                becomes a source you can actually trust.</p>
+            </div>
+          </div>
+          <div class="svc spot reveal" style="--d:300ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 20h18M6 16V10M11 16V5M16 16v-4M21 16V8" />
+              </svg></div>
+            <div>
+              <h3>E-commerce and reporting</h3>
+              <p>Product catalogue, titles, tags, sale pricing and order processing with Cash on Delivery — plus daily
+                store records and Google Site Kit / Meta Pixel tracking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="alt">
+      <div class="wrap">
+        <p class="kicker reveal">Toolkit</p>
+        <h2 class="reveal">Skills</h2>
+        <p class="sub reveal" style="--d:80ms">What I use day to day to keep records clean and accurate.</p>
+        <div class="skl-top reveal">
+          <div class="skl-bar reveal" id="sklBar" role="group" aria-label="Highlight a skill category"></div>
+        </div>
+        <div class="skm reveal" id="skm" role="img" aria-label="My skills">
+          <div class="skm-band" id="skmBand"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <p class="kicker reveal">Background</p>
+        <h2 class="reveal">Experience</h2>
+        <p class="sub reveal" style="--d:80ms">Three years of production records, plus running a live store end to end.
+        </p>
+        <div class="tl" id="tl">
+          <div class="ev reveal">
+            <span class="when">2026 to present</span>
+            <h3>Founder &amp; Online Store Manager</h3>
+            <p class="org">Comfort House, self-run WooCommerce store, <a href="https://comforthouse.pk" target="_blank"
+                rel="noopener">comforthouse.pk</a></p>
+            <ul>
+              <li>Manage and update a catalogue of 35+ products, including titles, tags, categories and sale pricing.
+              </li>
+              <li>Process and track customer orders, from order entry through fulfilment and Cash on Delivery.</li>
+              <li>Handle customer queries, supplier coordination and daily store records.</li>
+              <li>Track site traffic and ad performance using Google Site Kit and Meta Pixel.</li>
+            </ul>
+          </div>
+          <div class="ev reveal">
+            <span class="when">2022 to 2025</span>
+            <h3>Data Entry Operator</h3>
+            <p class="org">Blessed Textiles Limited, Weaving Unit — Admin Staff Department, Sheikhupura</p>
+            <ul>
+              <li>Entered and maintained production, inventory and order records in Oracle for a textile manufacturing
+                unit.</li>
+              <li>Kept data accurate and up to date across departments, supporting daily reporting.</li>
+              <li>Handled high volumes of data without errors, following company record-keeping standards.</li>
+              <li>Received an experience certificate from the Manager Administration describing me as honest and
+                hard-working, with good moral character.</li>
+            </ul>
+          </div>
+          <div class="ev reveal">
+            <span class="when">2021</span>
+            <h3>BS (Hons) Mathematics</h3>
+            <p class="org">University of Sargodha</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="alt">
+      <div class="wrap">
+        <p class="kicker reveal">Get in touch</p>
+        <h2 class="reveal">Contact</h2>
+        <p class="sub reveal" style="--d:80ms">Share your data project by email or WhatsApp, whichever is easiest for
+          you.</p>
+        <div class="contact">
+          <div class="panel reveal">
+            <h3>Send project details</h3>
+            <label class="f" for="f-name">Your name</label>
+            <input class="in" id="f-name" type="text" autocomplete="name">
+            <label class="f" for="f-type">What do you need?</label>
+
+            <select class="in" id="f-type">
+              <option style="background:#120B26;color:#F5F3FF">Data entry project</option>
+              <option style="background:#120B26;color:#F5F3FF">Data cleaning or de-duplication</option>
+              <option style="background:#120B26;color:#F5F3FF">Data mining or web research</option>
+              <option style="background:#120B26;color:#F5F3FF">Product catalogue and listings</option>
+              <option style="background:#120B26;color:#F5F3FF">Order processing</option>
+              <option style="background:#120B26;color:#F5F3FF">Reporting support</option>
+              <option style="background:#120B26;color:#F5F3FF">Something else</option>
+            </select>
+            <label class="f" for="f-msg">Project details</label>
+            <textarea class="in" id="f-msg" placeholder="Tell me what the data is, how much of it, and the format you need."></textarea>
+            <div class="btns">
+              <button class="btn fill" id="send-mail" type="button">Send by email</button>
+              <button class="btn" id="send-wa" type="button">Send on WhatsApp</button>
+            </div>
+            <p class="hint">This opens your email app or WhatsApp with the message ready. Nothing is sent until you
+              press send there.</p>
+          </div>
+          <div class="panel spot reveal" style="--d:120ms">
+            <h3>Direct contact</h3>
+            <ul class="ways">
+              <li><small>Email</small><a href="mailto:contactwithumarhayat@gmail.com">contactwithumarhayat@gmail.com</a>
+              </li>
+              <li><small>WhatsApp</small><a href="https://wa.me/923104561634" target="_blank" rel="noopener">+92 310
+                  4561634</a></li>
+              <li><small>GitHub</small><a href="https://github.com/umarhayat834" target="_blank"
+                  rel="noopener">github.com/umarhayat834</a></li>
+              <li><small>My store</small><a href="https://comforthouse.pk" target="_blank"
+                  rel="noopener">comforthouse.pk</a></li>
+            </ul>
+            <p class="hint" style="margin-top:1rem">References and my experience certificate from Blessed Textiles
+              Limited are available on request.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><span>&copy; 2026 Umar Hayat</span><a href="#top">Back to top</a></div>
+  </footer>
+
+  <div class="scrim" id="scrim" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" aria-hidden="true">
+    <div class="dr-head">
+      <h2 id="dr-title">Start a project</h2><button class="dr-x" id="dr-close" type="button" aria-label="Close"><svg
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+          aria-hidden="true">
+          <path d="M5 5l14 14M19 5L5 19" />
+        </svg></button>
+    </div>
+    <div class="dr-prog">
+      <p id="dr-msg" aria-live="polite">Choose what you need to get started.</p>
+      <div class="meter" aria-hidden="true"><i id="dr-bar"></i></div>
+    </div>
+    <div class="dr-body">
+      <p class="dr-h">What do you need?</p>
+      <div class="opts">
+        <label class="opt"><input type="checkbox" name="svc" value="Data entry project"><span class="ico"><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="16" rx="2" />
+              <path d="M3 9h18M9 9v11" />
+            </svg></span><span><b>Data entry project</b><small>Records entered accurately into your
+              system</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="Data cleaning and verification"><span
+            class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 21l4-1 11-11a2.1 2.1 0 0 0-3-3L4 17l-1 4z" />
+              <path d="M14 6l3 3" />
+            </svg></span><span><b>Data cleaning &amp; verification</b><small>De-duplicate, standardise and verify your
+              data</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="Data mining and web research"><span
+            class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m21 21-4.3-4.3" />
+            </svg></span><span><b>Data mining / web research</b><small>Structured data from the web and
+              catalogues</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="Product catalogue and listings"><span
+            class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.6 7.5L12 3 3.4 7.5 12 12l8.6-4.5z" />
+              <path d="M3.4 12L12 16.5 20.6 12M3.4 16.5L12 21l8.6-4.5" />
+            </svg></span><span><b>Product catalogue &amp; listings</b><small>Titles, tags, categories and sale
+              pricing</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="Order processing and reporting"><span
+            class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 20h18M6 16V10M11 16V5M16 16v-4M21 16V8" />
+            </svg></span><span><b>Order processing &amp; reporting</b><small>Orders, fulfilment records and daily
+              reports</small></span><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5l4.5 4.5L19 7.5" />
+            </svg></span></label>
+      </div>
+      <p class="dr-h">Add-ons</p>
+      <div class="opts">
+        <label class="opt addon"><input type="checkbox" name="add"
+            value="Second verification pass"><span><b>Verification pass</b><small>A second accuracy check against your
+              source</small></span><span class="tg" aria-hidden="true"></span></label>
+        <label class="opt addon"><input type="checkbox" name="add" value="Reporting setup"><span><b>Reporting
+              setup</b><small>Daily or weekly record summaries</small></span><span class="tg"
+            aria-hidden="true"></span></label>
+        <label class="opt addon"><input type="checkbox" name="add"
+            value="Google Site Kit and Meta Pixel tracking"><span><b>Add tracking</b><small>Google Site Kit and Meta
+              Pixel</small></span><span class="tg" aria-hidden="true"></span></label>
+      </div>
+      <p class="dr-h">About you</p>
+      <label class="f" for="dr-name">Your name</label>
+      <input class="in" id="dr-name" type="text" autocomplete="name">
+      <div class="two">
+        <div><label class="f" for="dr-email">Email</label><input class="in" id="dr-email" type="email"
+            autocomplete="email"></div>
+        <div><label class="f" for="dr-phone">WhatsApp number</label><input class="in" id="dr-phone" type="tel"
+            autocomplete="tel" placeholder="+92 ..."></div>
+      </div>
+      <p class="dr-h">Your project</p>
+      <div class="two">
+        <div><label class="f" for="dr-budget">Budget (optional)</label><input class="in" id="dr-budget" type="text"
+            placeholder="For example 50,000 PKR"></div>
+        <div><label class="f" for="dr-time">When do you need it?</label>
+          <select class="in" id="dr-time">
+            <option>As soon as possible</option>
+            <option>Within 2 weeks</option>
+            <option>Within a month</option>
+            <option>No fixed deadline</option>
+          </select>
+        </div>
+      </div>
+      <label class="f" for="dr-site">Where is your data now? (optional)</label>
+      <input class="in" id="dr-site" type="text"
+        placeholder="Google Sheets, Excel, Oracle, a website…">
+      <label class="f" for="dr-msg2">Project details</label>
+      <textarea class="in" id="dr-msg2"
+        placeholder="Tell me what the data is, roughly how much of it there is, and the format you need."></textarea>
+    </div>
+    <div class="dr-foot">
+      <div class="sumrow"><span>Items selected</span><strong id="dr-count">0</strong></div>
+      <p class="dr-hint" id="dr-hint">This opens WhatsApp or your email app with your brief ready. Nothing is sent until
+        you press send there.</p>
+      <button class="btn fill" id="dr-wa" type="button" disabled>Send brief on WhatsApp</button>
+      <button class="btn out" id="dr-mail" type="button" disabled>Send brief by email</button>
+    </div>
+  </aside>
+
+<script>
+    (function () {
+      var EMAIL = "contactwithumarhayat@gmail.com", WA = "923104561634";
+      function compose() {
+        var n = document.getElementById("f-name").value.trim(),
+          t = document.getElementById("f-type").value,
+          m = document.getElementById("f-msg").value.trim();
+        return {
+          subject: "Project enquiry: " + t,
+          body: "Hi Umar,\n\n" + (n ? "My name is " + n + ".\n" : "") + "I need: " + t + "\n\nProject details:\n" + (m || "(I will share more details soon.)") + "\n"
+        };
+      }
+      document.getElementById("send-mail").addEventListener("click", function () {
+        var c = compose();
+        window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(c.subject) + "&body=" + encodeURIComponent(c.body);
+      });
+      document.getElementById("send-wa").addEventListener("click", function () {
+        var c = compose();
+        window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(c.subject + "\n\n" + c.body), "_blank", "noopener");
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      var d = document, reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+      var $ = function (id) { return d.getElementById(id) };
+      var hero = $("hero"), h1 = $("h1");
+
+      /* hero headline: word-by-word reveal */
+      if (!reduce) {
+        var txt = h1.textContent.trim(), words = txt.split(/\s+/);
+        h1.setAttribute("aria-label", txt);
+        h1.innerHTML = words.map(function (w, i) { return '<span class="w' + (i > 1 ? ' g' : '') + '" aria-hidden="true"><span style="--i:' + i + '">' + w + '</span></span>' }).join(" ");
+        requestAnimationFrame(function () { requestAnimationFrame(function () { h1.classList.add("ready"); hero.classList.add("go") }) });
+      } else { hero.classList.add("go") }
+
+      /* marquee */
+      var words2 = ["Oracle", "Data Entry", "Data Verification", "Data Cleaning", "Data Mining", "Web Research", "Record Keeping", "WooCommerce", "WordPress", "Google Site Kit", "Meta Pixel", "Order Management"]
+      $("track").innerHTML = words2.concat(words2).map(function (w) { return "<span>" + w + "</span>" }).join("");
+
+      /* reveal on scroll */
+      var items = [].slice.call(d.querySelectorAll(".reveal"));
+      if ("IntersectionObserver" in window && !reduce) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("shown"); io.unobserve(e.target) } });
+        }, { threshold: .12, rootMargin: "0px 0px -6% 0px" });
+        items.forEach(function (el) { io.observe(el) });
+      } else { items.forEach(function (el) { el.classList.add("shown") }) }
+
+      /* counters */
+      var nums = [].slice.call(d.querySelectorAll("[data-n]"));
+      function count(el) {
+        var n = +el.dataset.n, s = el.dataset.s || "", t0 = null, dur = 1400;
+        function step(t) {
+          if (t0 === null) t0 = t;
+          var p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(n * e) + (p === 1 ? s : "");
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+      if ("IntersectionObserver" in window && !reduce) {
+        var co = new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting) { count(e.target); co.unobserve(e.target) } });
+        }, { threshold: .6 });
+        nums.forEach(function (el) { co.observe(el) });
+      }
+
+      /* scroll-linked: progress bar, header, parallax, timeline, active nav */
+      var bar = $("bar"), hdr = $("hdr"), tl = $("tl"), ticking = false;
+      function onScroll() {
+        var y = window.pageYOffset || 0, max = Math.max(d.documentElement.scrollHeight - window.innerHeight, 1);
+        bar.style.setProperty("--p", Math.min(y / max, 1).toFixed(4));
+        hdr.classList.toggle("scrolled", y > 30);
+        if (!reduce) {
+          hero.style.setProperty("--py", (y * .18).toFixed(1));
+          var r = tl.getBoundingClientRect(), p = (window.innerHeight * .65 - r.top) / r.height;
+          tl.style.setProperty("--tp", Math.max(0, Math.min(1, p)).toFixed(3));
+        }
+        ticking = false;
+      }
+      window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll) } }, { passive: true });
+      onScroll();
+
+      var links = {};
+      [].forEach.call(d.querySelectorAll(".menu a.l"), function (a) { links[a.getAttribute("href").slice(1)] = a });
+      if ("IntersectionObserver" in window) {
+        var spy = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting) {
+              Object.keys(links).forEach(function (k) { links[k].classList.remove("active"); links[k].removeAttribute("aria-current") });
+              var a = links[e.target.id]; if (a) { a.classList.add("active"); a.setAttribute("aria-current", "true") }
+            }
+          });
+        }, { rootMargin: "-45% 0px -50% 0px" });
+        Object.keys(links).forEach(function (id) { var s = $(id); if (s) spy.observe(s) });
+      }
+
+      /* mobile menu */
+      var burger = $("burger"), menu = d.querySelector(".menu");
+      if (burger) {
+        var setMenu = function (open) {
+          hdr.classList.toggle("menu-open", open);
+          burger.setAttribute("aria-expanded", open ? "true" : "false");
+        };
+        burger.addEventListener("click", function () { setMenu(!hdr.classList.contains("menu-open")) });
+        menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false) });
+        d.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false) });
+        window.addEventListener("resize", function () { if (window.innerWidth > 900) setMenu(false) });
+      }
+
+      /* pointer effects (mouse only) */
+      if (fine && !reduce) {
+        var cur = $("cursor"), cx = 0, cy = 0, pend = false;
+        d.addEventListener("pointermove", function (e) {
+          cx = e.clientX; cy = e.clientY;
+          if (!pend) { pend = true; requestAnimationFrame(function () { cur.style.transform = "translate(" + cx + "px," + cy + "px)"; cur.classList.add("on"); pend = false }) }
+          var s = e.target.closest && e.target.closest(".spot");
+          if (s) { var r = s.getBoundingClientRect(); s.style.setProperty("--mx", (e.clientX - r.left) + "px"); s.style.setProperty("--my", (e.clientY - r.top) + "px") }
+        }, { passive: true });
+        d.addEventListener("pointerleave", function () { cur.classList.remove("on") });
+
+        [].forEach.call(d.querySelectorAll(".proj"), function (c) {
+          c.addEventListener("pointermove", function (e) {
+            var r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+            c.style.setProperty("--ry", (x * 6).toFixed(2) + "deg");
+            c.style.setProperty("--rx", (-y * 6).toFixed(2) + "deg");
+          });
+          c.addEventListener("pointerleave", function () { c.style.removeProperty("--rx"); c.style.removeProperty("--ry") });
+        });
+
+        [].forEach.call(d.querySelectorAll(".mag"), function (b) {
+          b.addEventListener("pointermove", function (e) {
+            var r = b.getBoundingClientRect();
+            b.style.translate = ((e.clientX - r.left - r.width / 2) * .25).toFixed(1) + "px " + ((e.clientY - r.top - r.height / 2) * .35).toFixed(1) + "px";
+          });
+          b.addEventListener("pointerleave", function () { b.style.translate = "" });
+        });
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var d = document, root = d.documentElement, $ = function (id) { return d.getElementById(id) };
+      var drawer = $("drawer"), last = null;
+      var EMAIL = "contactwithumarhayat@gmail.com", WA = "923104561634";
+      function val(id) { return $(id).value.trim() }
+      function checked(n) { return [].map.call(d.querySelectorAll('input[name="' + n + '"]:checked'), function (i) { return i.value }) }
+      function state() {
+        var svc = checked("svc"), add = checked("add");
+        var steps = [
+          { ok: svc.length > 0, msg: "Choose at least one thing you need" },
+          { ok: !!val("dr-name"), msg: "Add your name" },
+          { ok: !!(val("dr-email") || val("dr-phone")), msg: "Add your email or WhatsApp number" },
+          { ok: !!val("dr-msg2"), msg: "Tell me a little about your project" }
+        ];
+        var done = steps.filter(function (s) { return s.ok }).length;
+        var next = steps.filter(function (s) { return !s.ok })[0];
+        return { svc: svc, add: add, done: done, ready: done === 4, next: next };
+      }
+      function update() {
+        var s = state();
+        $("dr-bar").style.width = (s.done / 4 * 100) + "%";
+        $("dr-count").textContent = s.svc.length + s.add.length;
+        $("dr-msg").textContent = s.ready ? "Your brief is ready to send." : s.next.msg + " (" + s.done + " of 4 done)";
+        $("dr-wa").disabled = !s.ready; $("dr-mail").disabled = !s.ready;
+      }
+      function brief() {
+        var s = state(), L = [];
+        L.push("Hi Umar,", "", "I would like to start a project.", "");
+        L.push("Name: " + val("dr-name"));
+        if (val("dr-email")) L.push("Email: " + val("dr-email"));
+        if (val("dr-phone")) L.push("WhatsApp: " + val("dr-phone"));
+        L.push("", "I need: " + s.svc.join(", "));
+        if (s.add.length) L.push("Add-ons: " + s.add.join(", "));
+        if (val("dr-budget")) L.push("Budget: " + val("dr-budget"));
+        L.push("Timeline: " + $("dr-time").value);
+        if (val("dr-site")) L.push("Data location: " + val("dr-site"));
+        L.push("", "Project details:", val("dr-msg2"), "");
+        return { subject: "Project enquiry: " + s.svc.join(", "), body: L.join("\n") };
+      }
+      function open() {
+        last = d.activeElement;
+        root.classList.add("dr-open");
+        drawer.setAttribute("aria-hidden", "false");
+        var body = drawer.querySelector(".dr-body");
+        if (body) body.scrollTop = 0;
+        setTimeout(function () { $("dr-close").focus() }, 60);
+      }
+      function close() {
+        root.classList.remove("dr-open");
+        drawer.setAttribute("aria-hidden", "true");
+        if (last && last.focus) last.focus();
+      }
+      [].forEach.call(d.querySelectorAll('[data-open="brief"]'), function (a) {
+        a.addEventListener("click", function (e) { e.preventDefault(); open() });
+      });
+      $("scrim").addEventListener("click", close);
+      $("dr-close").addEventListener("click", close);
+      d.addEventListener("keydown", function (e) {
+        if (!root.classList.contains("dr-open")) return;
+        if (e.key === "Escape") { close(); return }
+        if (e.key === "Tab") {
+          var f = [].filter.call(drawer.querySelectorAll('button,input,select,textarea,a[href]'), function (el) { return !el.disabled && el.offsetParent !== null });
+          if (!f.length) return;
+          var a = f[0], z = f[f.length - 1];
+          if (e.shiftKey && d.activeElement === a) { e.preventDefault(); z.focus() }
+          else if (!e.shiftKey && d.activeElement === z) { e.preventDefault(); a.focus() }
+        }
+      });
+      drawer.addEventListener("input", update);
+      drawer.addEventListener("change", update);
+      $("dr-wa").addEventListener("click", function () {
+        var b = brief();
+        window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(b.subject + "\n\n" + b.body), "_blank", "noopener");
+      });
+      $("dr-mail").addEventListener("click", function () {
+        var b = brief();
+        window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(b.subject) + "&body=" + encodeURIComponent(b.body);
+      });
+      update();
+    })();
+  </script>
+  <script>
+(function(){
+  var ic=['<path d="M4 5h16v14H4z"/><path d="M4 9h16M9 9v10"/>','<path d="M6 7h14l-1.5 9H8L6 3H3"/><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/>','<path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/>','<path d="M3 20h18M6 16V10M11 16V5M16 16v-4M21 16V8"/>','<path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/>'];
+  /* EDIT YOUR SKILLS HERE */
+  var cats=[
+    ["Data Entry & Records",["Accurate Data Entry","Data Verification","Record Keeping","Database Updating","Data Cleaning","High-volume Entry"]],
+    ["E-commerce",["WooCommerce","WordPress","Product Catalogue","Sale Pricing","Order Processing","Cash on Delivery","Customer Queries","Supplier Coordination"]],
+    ["Research & Mining",["Data Mining","Web Research","Source Verification"]],
+    ["Reporting & Tracking",["Daily Reporting","Google Site Kit","Meta Pixel","Ad Performance Tracking","Store Records"]],
+    ["Strengths",["Attention to Detail","Accuracy","Reliability","Confidentiality","Time Management","Process Discipline"]]
+  ]
+  var bar=document.getElementById("sklBar"),band=document.getElementById("skmBand"),skm=document.getElementById("skm");
+  if(!bar||!band)return;
+  var all=[],rows=[[],[],[]],btns=[],reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  cats.forEach(function(c,i){
+    var b=document.createElement("button");b.type="button";b.className="skl";b.setAttribute("data-c",i);b.setAttribute("aria-pressed","false");
+    b.innerHTML="<b></b>"+c[0];bar.appendChild(b);btns.push(b);
+    c[1].forEach(function(n){all.push([i,n])});
+  });
+  all.forEach(function(s,k){rows[k%3].push(s)});
+  skm.setAttribute("aria-label","Skills: "+all.map(function(s){return s[1]}).join(", "));
+  var cls=["a","b rev","c"];
+  rows.forEach(function(r,i){
+    var h=r.map(function(s){return '<span data-c="'+s[0]+'"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+ic[s[0]]+'</svg></i>'+s[1]+'</span>'}).join("");
+    var d=document.createElement("div");d.className="skm-row "+cls[i];d.setAttribute("aria-hidden","true");d.innerHTML=h+h;band.appendChild(d);
+  });
+  btns.forEach(function(b){
+    b.addEventListener("click",function(){
+      var on=b.getAttribute("aria-pressed")==="true",c=b.getAttribute("data-c");
+      btns.forEach(function(x){x.setAttribute("aria-pressed","false")});
+      if(!on)b.setAttribute("aria-pressed","true");
+      [].forEach.call(band.querySelectorAll("span"),function(sp){sp.classList.toggle("dim",!on&&sp.getAttribute("data-c")!==c)});
+    });
+  });
+  if(reduce)return;
+  /* strip slows down smoothly while the mouse is over it */
+  var rowEls=[].slice.call(band.children),rate=1,target=1;
+  skm.addEventListener("pointerenter",function(e){if(e.pointerType==="mouse")target=.08});
+  skm.addEventListener("pointerleave",function(){target=1});
+  (function tick(){
+    rate+=(target-rate)*.06;
+    rowEls.forEach(function(r){var a=r.getAnimations()[0];if(a)a.playbackRate=rate});
+    requestAnimationFrame(tick);
+  })();
+})();
+</script>
 </body>
+
 </html>
